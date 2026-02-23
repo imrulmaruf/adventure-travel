@@ -107,8 +107,10 @@ body {
 ========================= */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: auto;
   padding-top: 100px;
+  padding-bottom: 120px;   
+  margin-bottom: 0;
   overflow: hidden;
   text-align: center;
 }
@@ -147,13 +149,28 @@ body {
   height: 200px;
   object-fit: cover;
   border-radius: 80px;
+  z-index: 1;
 }
 
-.left-top { left: 120px; top: 180px; }
-.right-top { right: 120px; top: 120px; }
-.left-bottom { left: 100px; bottom: 240px; }
-.right-bottom { right: 120px; bottom: 260px; }
+.left-top {
+  left: 80px;
+  top: 160px;
+}
 
+.right-top {
+  right: 80px;
+  top: 120px;
+}
+
+.left-bottom {
+  left: 80px;
+  bottom: 40px;
+}
+
+.right-bottom {
+  right: 80px;
+  bottom: 40px;
+}
 /* Search box */
 .search-box {
   margin: 60px auto 0;
@@ -167,6 +184,8 @@ body {
   justify-content: space-between;
   gap: 20px;
   box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+  position: relative;
+  z-index: 3; 
 }
 
 .field {
@@ -210,11 +229,10 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 120px;
-  background: url("images/skyline.png") repeat-x bottom;
+  height: 60px;
   opacity: 0.25;
+  z-index: 0;
 }
-
 /* Booking button */
 .booking-btn {
   background: #35c39c;
@@ -236,6 +254,8 @@ body {
   width: 100%;
   padding-bottom: 80px;
   text-align: center;
+    margin-top: 35px;
+  padding-top: 0;
 }
 
 .section-header .subtitle {
