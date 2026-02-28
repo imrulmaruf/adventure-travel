@@ -19,8 +19,10 @@
 </head>
 
 <body>
+<!-- ================= HEADER (TOPBAR + NAVBAR) ================= -->
+<div class="header-wrapper">
 
-  <!-- ================= TOP BAR ================= -->
+  <!-- TOP BAR -->
   <div class="top-bar">
     <div class="container top-bar-content">
       <div class="left-info">
@@ -33,9 +35,10 @@
     </div>
   </div>
 
-  <!-- ================= NAVBAR ================= -->
-  <header class="navbar-wrapper">
+  <!-- NAVBAR -->
+  <div class="navbar-area">
     <div class="navbar container">
+
       <div class="logo">
         <i class="fa-solid fa-suitcase-rolling"></i>
         <span>TravHub</span>
@@ -55,8 +58,11 @@
         <i class="fa-solid fa-magnifying-glass"></i>
         <button class="booking-btn">Start Booking</button>
       </div>
+
     </div>
-  </header>
+  </div>
+
+</div>
 
   <!-- ================= HERO SECTION ================= -->
   <section class="hero">
@@ -258,38 +264,47 @@
     </div>
   </section>
 
-  <!-- ================= RECENT GALLERY ================= -->
-  <section class="gallery-section">
-    <p class="subtitle">Our beautiful moment</p>
-    <h2>Recent Gallery</h2>
-    <p class="description">
-      Content of a page when looking at layout the point<br>
-      of using lorem the is ipsum less
-    </p>
+<!-- ================= RECENT GALLERY ================= -->
+<section class="gallery-section">
+  <p class="subtitle">Our beautiful moment</p>
+  <h2>Recent Gallery</h2>
+  <p class="description">
+    Content of a page when looking at layout the point<br>
+    of using lorem the is ipsum less
+  </p>
 
-    <div class="gallery">
-      <div class="gallery-item"><img src="images/gallery-1-1.webp" alt=""></div>
-      <div class="gallery-item">
-        <img src="images/gallery-1-2.webp" alt="Image 1">
-        <img src="images/gallery-1-6.webp" alt="Image 2">
-      </div>
-      <div class="gallery-item"><img src="images/gallery-1-3.webp" alt="">
-        <div class="overlay"><i class="fas fa-camera"></i></div>
-      </div>
-      <div class="gallery-item">
-        <img src="images/gallery-1-4.webp" alt="Image 1">
-        <img src="images/gallery-1-7.webp" alt="Image 2">
-      </div>
-      <div class="gallery-item"><img src="images/gallery-1-5.webp" alt=""></div>
-      <div class="gallery-item">
-        <img src="images/gallery-1-8.webp" alt="Image 1">
-        <img src="images/gallery-1-12.webp" alt="Image 2">
-      </div>
-      <div class="gallery-item"><img src="images/gallery-1-9.webp" alt=""></div>
-      <div class="gallery-item"><img src="images/gallery-1-10.webp" alt=""></div>
-      <div class="gallery-item"><img src="images/gallery-1-11.webp" alt=""></div>
+  <div class="gallery">
+    <div class="gallery-item"><img src="images/gallery-1-1.webp" alt=""></div>
+
+    <div class="gallery-item two-images">
+      <img src="images/gallery-1-2.webp" alt="Image 1">
+      <img src="images/gallery-1-6.webp" alt="Image 2">
     </div>
-  </section>
+
+    <div class="gallery-item"><img src="images/gallery-1-3.webp" alt="">
+      <div class="overlay"><i class="fas fa-camera"></i></div>
+    </div>
+
+    <div class="gallery-item two-images">
+      <img src="images/gallery-1-4.webp" alt="Image 1">
+      <img src="images/gallery-1-7.webp" alt="Image 2">
+    </div>
+
+    <div class="gallery-item"><img src="images/gallery-1-5.webp" alt=""></div>
+
+    <div class="gallery-item two-images">
+      <img src="images/gallery-1-8.webp" alt="Image 1">
+      <img src="images/gallery-1-12.webp" alt="Image 2">
+    </div>
+
+    <div class="gallery-item"><img src="images/gallery-1-9.webp" alt=""></div>
+
+    <!-- This is the big image -->
+    <div class="gallery-item big-image"><img src="images/gallery-1-10.webp" alt=""></div>
+
+    <div class="gallery-item"><img src="images/gallery-1-11.webp" alt=""></div>
+  </div>
+</section>
 
   <!-- ================= TRAVEL STATS SECTION ================= -->
   <section class="travel-section">
@@ -438,105 +453,106 @@
   </div>
 
   <div class="blog-wrapper">
-    <div class="blog-card">
-      <img src="images/blog-1-1.webp" alt="Hidden Gems Europe">
-      <div class="blog-content">
-        <span class="category">Travel Tips</span>
-        <h3>Discover The Hidden Gems in Europe</h3>
-        <div class="meta">Feb 25, 2026 | by Admin</div>
-      </div>
+  <div class="blog-card" style="background-image: url('images/blog-1-1.webp');">
+    <div class="blog-content">
+      <span class="category">Travel Tips</span>
+      <h3>Discover The Hidden Gems in Europe</h3>
+      <div class="meta">Feb 25, 2026 | by Admin</div>
     </div>
+  </div>
 
-    <div class="blog-card">
-      <img src="images/blog-1-2.webp" alt="Top Beaches">
-      <div class="blog-content">
-        <span class="category">Adventure</span>
-        <h3>Top 10 Beaches You Must Visit</h3>
-        <div class="meta">Feb 20, 2026 | by Admin</div>
-      </div>
+  <div class="blog-card" style="background-image: url('images/blog-1-2.webp');">
+    <div class="blog-content">
+      <span class="category">Adventure</span>
+      <h3>Top 10 Beaches You Must Visit</h3>
+      <div class="meta">Feb 20, 2026 | by Admin</div>
     </div>
+  </div>
 
-    <div class="blog-card">
-      <img src="images/blog-1-3.webp" alt="Travel Safety">
-      <div class="blog-content">
-        <span class="category">Guides</span>
-        <h3>How to Travel Safely During Holidays</h3>
-        <div class="meta">Feb 15, 2026 | by Admin</div>
-      </div>
+  <div class="blog-card" style="background-image: url('images/blog-1-3.webp');">
+    <div class="blog-content">
+      <span class="category">Guides</span>
+      <h3>How to Travel Safely During Holidays</h3>
+      <div class="meta">Feb 15, 2026 | by Admin</div>
     </div>
+  </div>
+</div>
+</section>
+
+ <!-- ================= FOOTER WRAPPER ================= -->
+<div class="footer-wrapper">
+
+  <!-- ================= NEWSLETTER ================= -->
+<section class="newsletter">
+  <div class="container newsletter-container">
+    <h2>Get Updated The Latest <br>
+Newsletter</h2>
+    
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter email address" required>
+      <button type="submit">Send Message</button>
+    </form>
   </div>
 </section>
 
-  <!-- ================= FOOTER ================= -->
-  <footer class="footer">
-    <section class="newsletter">
-      <div class="newsletter-container">
-        <h2>Get Updated The Latest Newsletter</h2>
-        <div class="newsletter-inputs">
-          <input type="email" placeholder="Enter email address">
-          <button type="submit">Send Message</button>
-        </div>
+  <!-- FOOTER (BLACK PART) -->
+<footer class="footer">
+
+  <div class="footer-container">
+    <div class="footer-col brand">
+      <div class="brand-logo">
+        <i class="fa-solid fa-suitcase-rolling"></i>
+        <span class="brand-name">TravHub</span>
       </div>
-    </section>
+      <p class="brand-text">
+        Content of a page when looking at layout the point of using
+        lorem the is Ipsum less when looking normal
+      </p>
 
-    <div class="footer-container">
-      <div class="footer-col brand">
-        <div class="brand-logo">
-          <i class="fa-solid fa-suitcase-rolling"></i>
-          <span>TravHub</span>
-        </div>
-        <p>
-          Content of a page when looking at layout the point of using
-          lorem the is Ipsum less when looking normal
-        </p>
-
-        <div class="socials">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-linkedin-in"></i>
-          <i class="fa-brands fa-instagram"></i>
-        </div>
-      </div>
-
-      <div class="footer-col">
-        <h3>Useful Links</h3>
-        <ul>
-          <li>Home</li>
-          <li>About us</li>
-          <li>Destination</li>
-          <li>Blog</li>
-          <li>Contact Us</li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h3>Legal</h3>
-        <ul>
-          <li>Terms of use</li>
-          <li>Terms & conditions</li>
-          <li>Privacy policy</li>
-          <li>Cookie policy</li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h3>Our Gallery</h3>
-        <div class="gallery">
-          <img src="images/gallery-1.webp" alt="">
-          <img src="images/gallery-2.webp" alt="">
-          <img src="images/gallery-3.webp" alt="">
-          <img src="images/gallery-4.webp" alt="">
-          <img src="images/gallery-5.webp" alt="">
-          <img src="images/gallery-6.webp" alt="">
-        </div>
+      <div class="socials">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-instagram"></i>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      © Copyright 2026 by TravHub Next js Template.
+    <div class="footer-col">
+      <h3>Useful Links</h3>
+      <ul>
+        <li>Home</li>
+        <li>About us</li>
+        <li>Destination</li>
+        <li>Blog</li>
+        <li>Contact Us</li>
+      </ul>
     </div>
-  </footer>
 
-</body>
+    <div class="footer-col">
+      <h3>Legal</h3>
+      <ul>
+        <li>Terms of use</li>
+        <li>Terms & conditions</li>
+        <li>Privacy policy</li>
+        <li>Cookie policy</li>
+      </ul>
+    </div>
 
-</html>
+    <div class="footer-col">
+      <h3>Our Gallery</h3>
+      <div class="gallery">
+        <img src="images/gallery-1.webp">
+        <img src="images/gallery-2.webp">
+        <img src="images/gallery-3.webp">
+        <img src="images/gallery-4.webp">
+        <img src="images/gallery-5.webp">
+        <img src="images/gallery-6.webp">
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © Copyright 2026 by TravHub Next js Template.
+  </div>
+
+</footer>
