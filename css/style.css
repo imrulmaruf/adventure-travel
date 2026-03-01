@@ -1,9 +1,7 @@
-/* =========================
-   RESET & BASE STYLES
-========================= */
-/* =========================
+
+/*=========================
    RESET
-========================= */
+=========================*/
 * {
   margin: 0;
   padding: 0;
@@ -143,7 +141,7 @@ body {
   padding-top: 100px;
   padding-bottom: 120px;
   margin-bottom: 0;
-  overflow: hidden;
+  overflow: scroll;
   text-align: center;
 }
 
@@ -172,6 +170,44 @@ body {
   font-size: 20px;
   color: gray;
   line-height: 1.7;
+}
+/* =========================
+   HERO TEXT ANIMATION
+========================= */
+
+/* Initial state (hidden) */
+.hero-content .subtitle,
+.hero-content h1,
+.hero-content p,
+.search-box {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+}
+
+/* Different delays */
+.hero-content .subtitle {
+  animation-delay: 0.2s;
+}
+
+.hero-content h1 {
+  animation-delay: 0.5s;
+}
+
+.hero-content p {
+  animation-delay: 0.9s;
+}
+
+.search-box {
+  animation-delay: 1.3s;
+}
+
+/* Keyframe */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Floating images */
@@ -367,6 +403,7 @@ body {
   border-radius: 20px;
   display: inline-block;
 }
+
 
 /* =========================
    WHY CHOOSE US
@@ -784,14 +821,14 @@ body {
     display: inline-block;
     margin-bottom: 10px;
 }
-.team h2 {  /* "Tour Guide" */
+.team h2 {  
     font-size: 40px;
     font-weight: 700;
     color: #222;
     margin-bottom: 15px;
 }
 
-.team p {  /* description text */
+.team p { 
     color: #777;
     font-size: 16px;
     line-height: 1.6;
@@ -799,7 +836,7 @@ body {
     margin: 0 auto 60px; 
 }
 
-/* Team cards container */
+
 .team-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -808,7 +845,6 @@ body {
     margin: auto;
 }
 
-/* Individual team card */
 .team-card {
     background: #f6f6f6;
     border-radius: 20px;
@@ -822,7 +858,7 @@ body {
     box-shadow: 0 20px 35px rgba(0,0,0,0.15);
 }
 
-/* Profile image */
+
 .team-card img {
     width: 110px;
     height: 110px;
@@ -835,7 +871,7 @@ body {
     border: 6px solid #fff;
 }
 
-/* Member name */
+
 .team-card h3 {
     margin-top: 70px;
     font-size: 20px;
@@ -843,7 +879,6 @@ body {
     color: #222;
 }
 
-/* Member role or position */
 .team-card span {
     display: block;
     margin: 8px 0 20px;
@@ -851,14 +886,13 @@ body {
     font-size: 14px;
 }
 
-/* Social icons container */
+
 .social {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-/* Individual social icon */
 .social i {
     width: 35px;
     height: 35px;
@@ -916,14 +950,14 @@ body {
    z-index: 1;
 }
 
-/* Make 3rd and 5th images fully round */
+
 .img3, .img5 {
     width: 140px;       
     height: 140px;      
     border-radius: 50%; 
 }
 
-/* Image positions with more gap */
+
 .img1 { top: 0; left: 160px; }      
 .img2 { top: 110px; left: 0; }      
 .img3 { top: 220px; left: 160px; }  
@@ -1236,7 +1270,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* Flex for form inputs and button */
+
 .newsletter-form {
   display: flex;
   gap: 10px;
