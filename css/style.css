@@ -2085,15 +2085,13 @@ body {
   list-style: none;
 }
 
-/* =========================
-   FOOTER LINKS STYLING
-========================= */
+/*FOOTER LINKS STYLING*/
 .footer-col ul li {
-  font-size: 18px;      
-  line-height: 2;        
-  margin-bottom: 12px;   
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 12px;
   cursor: pointer;
-  color: #b9c6c3de;        
+  color: #b9c6c3de;
   transition: color 0.3s;
 }
 
@@ -2157,9 +2155,7 @@ body {
   color: #ffffff;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/*RESPONSIVE*/
 @media (max-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr;
