@@ -179,7 +179,7 @@ html, body {
   }
 
   .menu li{
-    font-size:16px; /* slightly smaller on tablets */
+    font-size:16px; 
   }
 
   .nav-actions{
@@ -636,7 +636,7 @@ html, body {
 
 .round-img {
   position: absolute;
-  right: 20px;
+  right: -110px;
   top: 12%;
   width: 144px;
   height: 208px;
@@ -794,7 +794,7 @@ html, body {
   margin-left: 8px;
 }
 
-/*ANIMATION KEYFRAMES*/
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -806,9 +806,7 @@ html, body {
   }
 }
 
-/*=========================
-   RESPONSIVE
-=========================*/
+/*RESPONSIVE*/
 @media (max-width: 991px) {
   .why-choose .section {
     flex-direction: column;
@@ -889,7 +887,6 @@ html, body {
   flex-wrap: wrap;
 }
 
-/*CARD STYLES & ANIMATION*/
 .tour-cards .card {
   position: relative;
   width: 424px;          
@@ -1117,9 +1114,7 @@ html, body {
   color: #fff;
 }
 
-/*=========================
-   ANIMATION KEYFRAMES
-=========================*/
+/*ANIMATION KEYFRAMES*/
 @keyframes fadeInUp {
   0% {
     opacity: 0;
