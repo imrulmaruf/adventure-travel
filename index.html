@@ -13,56 +13,88 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Pacifico&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<!-- ================= HEADER (TOPBAR + NAVBAR) ================= -->
-<div class="header-wrapper">
 
-  <!-- TOP BAR -->
-  <div class="top-bar">
-    <div class="container top-bar-content">
-      <div class="left-info">
-        <span><i class="fa-solid fa-location-dot"></i>6391 Elgin St. Celina, Delaware 10299</span>
-        <span><i class="fa-solid fa-envelope"></i>exam126@gmail.com</span>
-      </div>
-      <div class="right-info">
-        <span><i class="fa-regular fa-clock"></i>Opening Hour 9:00am - 10:00pm</span>
+  <!-- ================= HEADER (TOPBAR + NAVBAR) ================= -->
+  <div class="header-wrapper">
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+      <div class="container top-bar-content">
+        <div class="left-info">
+          <span><i class="fa-solid fa-location-dot"></i> 6391 Elgin St. Celina, Delaware 10299</span>
+          <span><i class="fa-solid fa-envelope"></i> exam126@gmail.com</span>
+        </div>
+        <div class="right-info">
+          <span><i class="fa-regular fa-clock"></i> Opening Hour 9:00am - 10:00pm</span>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- NAVBAR -->
-  <div class="navbar-area">
-    <div class="navbar container">
+    <!-- NAVBAR -->
+    <div class="navbar-area">
+      <div class="navbar container">
 
-      <div class="logo">
-        
-        <img src="images/logo-1.webp" alt="TravHub">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="images/logo-1.webp" alt="TravHub">
+        </div>
+
+        <!-- Menu -->
+        <ul class="menu">
+          <li class="active">HOME</li>
+          <li>ABOUT</li>
+          <li>PAGES</li>
+          <li>TOURS</li>
+          <li>DESTINATION</li>
+          <li>NEWS</li>
+          <li>CONTACT</li>
+        </ul>
+
+        <!-- Actions -->
+        <div class="nav-actions">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <button class="booking-btn">Start Booking</button>
+        </div>
+
       </div>
-
-      <ul class="menu">
-        <li class="active">HOME</li>
-        <li>ABOUT</li>
-        <li>PAGES</li>
-        <li>TOURS</li>
-        <li>DESTINATION</li>
-        <li>NEWS</li>
-        <li>CONTACT</li>
-      </ul>
-
-      <div class="nav-actions">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <button class="booking-btn">Start Booking</button>
-      </div>
-
     </div>
-  </div>
 
-</div>
+  </div>
+  
+
+  <!-- ================= JS ================= -->
+  <script>
+    const navbarArea = document.querySelector('.navbar-area');
+
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 50) {
+        navbarArea.classList.add('fixed-navbar');
+
+        // Smooth slide down effect
+        setTimeout(() => {
+          navbarArea.classList.add('show');
+        }, 10);
+
+        document.body.classList.add('navbar-fixed-active');
+      } else {
+        navbarArea.classList.remove('show');
+        setTimeout(() => {
+          navbarArea.classList.remove('fixed-navbar');
+        }, 300); // match with CSS transition
+
+        document.body.classList.remove('navbar-fixed-active');
+      }
+    });
+  </script>
+
+</body>
+</html>
+
   <!-- ================= HERO SECTION ================= -->
   <section class="hero">
     <img src="images/image-hero-1-1.webp" class="float-img left-top">
@@ -177,9 +209,9 @@
       <div class="content">
         <span class="subtitle">Why we are</span>
         <h2 class="title">Why Choose Us</h2>
-        <p class="desc">
+        <span class="desc">
           Content of a page when looking at layout the point of using lorem the is Ipsum less
-        </p>
+        </span>
 
         <div class="feature">
           <div class="icon">🧳</div>
