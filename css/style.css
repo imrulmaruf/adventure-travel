@@ -134,21 +134,21 @@ html, body {
 }
 
 
-.booking-btn{
-  background:#36bfa1;
-  color:#fff;
-  border:none;
-  padding:12px 25px;
-  font-size: 18PX;
-  border-radius:30px;
-  font-weight:600;
-  cursor:pointer;
-  white-space:nowrap;
-  transition:.3s;
+.booking-btn {
+  background: #36bfa1;
+  color: #fff;
+  border: none;
+  padding: 18px 26px;  
+  font-size: 16px;      
+  border-radius: 30px;
+  font-weight: 600;      
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.3s;
 }
 
-.booking-btn:hover{
-  background:#2cab89;
+.booking-btn:hover {
+  background: #2cab89;
 }
 
 /*RESPONSIVE*/
@@ -194,36 +194,33 @@ html, body {
 }
 
 /*HERO SECTION*/
+
 .hero {
   position: relative;
-  min-height: auto;
   padding-top: 100px;
-  padding-bottom: 60px;
-  margin-bottom: 0;
-  overflow: visible;
+  padding-bottom: 80px;
   text-align: center;
+  overflow: hidden;
 }
 
 .hero-content {
   width: 100%;
-  padding: 0 60px;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 60px;
 }
 
 .subtitle {
   font-family: 'Pacifico', cursive;
   color: #36bfa1;
   font-size: 30px;
-  display: inline-block;
   margin-bottom: 10px;
-  font-weight: 400;
+  display: inline-block;
 }
 
 .hero h1 {
   font-size: 85px;
   font-weight: 800;
-  font-style: normal;
   color: #222;
   margin: 20px 0;
   line-height: 1.1;
@@ -233,7 +230,7 @@ html, body {
   font-size: 24px;
   color: #757575;
   line-height: 1.7;
-  font-weight: bold;  
+  font-weight: bold;
 }
 
 
@@ -252,13 +249,14 @@ html, body {
 .search-box { animation-delay: 1.3s; }
 
 @keyframes fadeUp {
-  to { opacity: 1; transform: translateY(0); }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .float-img {
   position: absolute;
-  width: 140px;
-  height: 200px;
   object-fit: cover;
   border-radius: 80px;
   z-index: 1;
@@ -271,25 +269,30 @@ html, body {
 
 
 .search-box {
-  margin: 60px auto 0;
-  background: #fff;
+  margin: 70px auto 0;
+  background: #ffffff;
   width: 100%;
   max-width: 1000px;
   border-radius: 60px;
-  padding: 20px 30px;
+  padding-left: 30px;    
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: stretch;    
   gap: 20px;
   box-shadow: 0 25px 60px rgba(0,0,0,0.08);
-  position: relative;
-  z-index: 3;
+  overflow: hidden;        
 }
 
-.field { flex: 1; text-align: left; }
+
+.field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px 0;  
+  text-align: left;
+}
 
 .field label {
-  display: block;
   font-size: 13px;
   color: #888;
   margin-bottom: 4px;
@@ -303,93 +306,82 @@ html, body {
 
 .divider {
   width: 1px;
-  height: 45px;
   background: #e6e6e6;
 }
 
+
+
 .search-btn {
-  flex-shrink: 0;
   background: #36bfa1;
   border: none;
   color: #fff;
-  padding: 18px 40px;
-  border-radius: 50px;
+  padding: 0 65px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 60px 60px 0;
+  transition: 0.3s;
 }
 
-
-.skyline {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  opacity: 0.25;
-  z-index: 0;
-}
-
-.booking-btn {
-  background: #35c39c;
-  color: #fff;
-  border: none;
-  padding: 14px 28px;
-  border-radius: 30px;
-  cursor: pointer;
-}
-
-.booking-btn:hover {
+.search-btn:hover {
   background: #2cab89;
 }
 
-/*RESPONSIVE MEDIA QUERIES */
+/*RESPONSIVE*/
+
 @media (max-width: 1200px) {
-  .hero h1 { font-size: 80px; }
-  .hero p { font-size: 22px; }
-  .subtitle { font-size: 28px; }
+  .hero h1 { font-size: 75px; }
 }
 
 @media (max-width: 992px) {
+
   .hero h1 { font-size: 60px; }
   .hero p { font-size: 20px; }
   .subtitle { font-size: 24px; }
 
-  .float-img.left-top { left: 50px; top: 120px; width: 140px; height: 200px; }
-  .float-img.right-top { right: 50px; top: 30px; width: 120px; height: 180px; }
-  .float-img.left-bottom, .float-img.right-bottom { top: auto; bottom: 20px; width: 120px; height: 120px; }
-
   .hero-content { padding: 0 40px; }
-  .search-box { flex-direction: column; gap: 15px; padding: 20px; }
-  .search-btn { width: 100%; padding: 16px 0; font-size: 15px; }
+
+  .search-box {
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 30px;
+  }
+
+  .field {
+    padding: 10px 0;
+  }
+
+  .search-btn {
+    width: 100%;
+    border-radius: 30px;
+    padding: 18px 0;
+  }
 }
 
 @media (max-width: 768px) {
+
   .hero h1 { font-size: 48px; }
   .hero p { font-size: 18px; }
   .subtitle { font-size: 20px; }
 
   .hero-content { padding: 0 20px; }
-  .search-box { padding: 15px; }
+
+  .float-img {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
+
   .hero h1 { font-size: 36px; }
   .hero p { font-size: 16px; }
   .subtitle { font-size: 18px; }
-
-  .float-img.left-top, .float-img.right-top, 
-  .float-img.left-bottom, .float-img.right-bottom {
-    display: none; 
-  }
-
-  .search-box { padding: 12px; }
-  .search-btn { padding: 14px 0; font-size: 14px; }
-  .menu li { font-size: 15px; } /* smaller on small phones */
 }
 
-/*=========================
-   DESTINATIONS SECTION
-=========================*/
+/*DESTINATIONS SECTION*/
 .destinations {
   width: 100%;
   padding-top: 0;
@@ -611,9 +603,7 @@ html, body {
     font-size: 18px;
   }
 }
-/*=========================
-   WHY CHOOSE US
-=========================*/
+/*WHY CHOOSE US*/
 .why-choose .section {
   display: flex;
   align-items: center;
@@ -838,9 +828,7 @@ html, body {
     transform: translateX(-50%);
   }
 }
-/*=========================
-   TOUR SECTION
-=========================*/
+/*TOUR SECTION*/
 .tour-section {
   width: 100%;
   max-width: 1700px;     
@@ -978,9 +966,7 @@ html, body {
   margin-right: 5px;
 }
 
-/*=========================
-   ANIMATION KEYFRAMES
-=========================*/
+/*ANIMATION KEYFRAMES*/
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -992,9 +978,7 @@ html, body {
   }
 }
 
-/*=========================
-   GALLERY
-=========================*/
+/*GALLERY*/
 .gallery-section {
   text-align: center;
   padding: 60px 20px 20px 20px;
@@ -1046,9 +1030,6 @@ html, body {
    justify-content: center; 
 }
 
-/*=========================
-   GALLERY ITEMS
-=========================*/
 .gallery-item.two-images img {
   margin-bottom: 20px; 
   width: 252px;
@@ -1126,9 +1107,7 @@ html, body {
     transform: translateY(0);
   }
 }
-/* =========================
-   TRAVEL STATS SECTION
-=========================*/
+/*TRAVEL STATS SECTION*/
 
 .travel-section {
   display: flex;
@@ -1147,7 +1126,7 @@ html, body {
   align-items: center;
 }
 
-/*================= IMAGES =================*/
+/*IMAGES*/
 
 .travel-section .images {
   position: relative;
@@ -1196,7 +1175,7 @@ html, body {
   border: 4px solid #ffffff;
 }
 
-/*================= STATS =================*/
+/*STATS*/
 
 .travel-section .stats {
   flex: 1;
@@ -1305,9 +1284,7 @@ html, body {
     opacity: 1;
   }
 }
-/* =========================
-   TEAM SECTION
-========================= */
+/*TEAM SECTION*/
 .team {
     text-align: center;
     padding: 80px 40px;
@@ -1372,9 +1349,7 @@ html, body {
     margin: auto;
 }
 
-/* =========================
-   TEAM CARD
-========================= */
+/*TEAM CARD*/
 .team-card {
     background: #eeeeee;
     border-radius: 20px;
@@ -1558,9 +1533,7 @@ body {
     font-weight: 600;
 }
 
-/*=========================
-   ANIMATION KEYFRAMES
-=========================*/
+/*ANIMATION KEYFRAMES*/
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -1584,9 +1557,7 @@ body {
     }
 }
 
-/* =========================
-   TRUSTED SECTION
-========================= */
+/*TRUSTED SECTION*/
 .trusted-section {
   display: flex;
   flex-direction: column;
@@ -1635,9 +1606,7 @@ body {
   transform: scale(1.1);
 }
 
-/*=========================
-   ANIMATION KEYFRAMES
-=========================*/
+/*ANIMATION KEYFRAMES*/
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -1668,9 +1637,7 @@ body {
   }
 }
 
-/* =========================
-   TEAM SECTION
-========================= */
+/*TEAM SECTION*/
 .team {
   text-align: center;
   padding: 80px 40px;
@@ -1800,9 +1767,7 @@ body {
   color: #fff;
 }
 
-/* =========================
-   BLOG SECTION
-========================= */
+/*BLOG SECTION*/
 .blog-section {
   text-align: center;
   padding: 60px 20px;
@@ -1920,9 +1885,7 @@ body {
   color: #ddd;
 }
 
-/*=========================
-   ANIMATION KEYFRAMES
-=========================*/
+/*ANIMATION KEYFRAMES*/
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -1933,17 +1896,13 @@ body {
     transform: translateY(0);
   }
 }
-/* =========================
-   FOOTER WRAPPER
-========================= */
+/*FOOTER WRAPPER*/
 .footer-wrapper {
   background: #031915; 
   padding-top: 0;
 }
 
-/* =========================
-   NEWSLETTER (WHITE CARD)
-========================= */
+/*NEWSLETTER (WHITE CARD)*/
 .newsletter {
   background: #ffffffe8;
   border-radius: 0px;
@@ -2015,9 +1974,7 @@ body {
   }
 }
 
-/* =========================
-   FOOTER
-========================= */
+/*FOOTER*/
 .footer {
   background: transparent; 
   color: #b9c6c3;
@@ -2043,7 +2000,7 @@ body {
   list-style: none;
 }
 
-/*FOOTER LINKS STYLING*/
+
 .footer-col ul li {
   font-size: 18px;
   line-height: 2;
